@@ -4,7 +4,7 @@
 
 | Thông tin | Chi tiết |
 |-----------|----------|
-| **Họ và tên** | Nguyễn Văn A |
+| **Họ và tên** | Nguyễn Sĩ Đang |
 | **MSSV** | 123456789 |
 | **Lớp** | CNTT01 |
 | **Môn học** | Lập trình Web Front-end |

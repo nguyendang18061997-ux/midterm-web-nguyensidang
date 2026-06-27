@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 05 - Portfolio | Nguyễn Sĩ Đang</title>
+
+  <!-- Bootstrap CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">&lt;NVA /&gt;</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Về tôi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Dự án</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Kỹ năng</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+          <li class="nav-item ms-2">
+            <button id="themeToggle" class="btn btn-sm btn-outline-theme">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / HOME ===== -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-6">
+          <p class="hero-greeting">Xin chào 👋, tôi là</p>
+          <h1 class="hero-name">Nguyễn Sĩ Đang</h1>
+          <h2 class="hero-role">Front-end Developer</h2>
+          <p class="hero-desc">
+            Sinh viên năm 3 ngành Công nghệ Thông tin, đam mê xây dựng giao diện
+            web đẹp, thân thiện và hiệu quả. Đang tìm kiếm cơ hội thực tập.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary-custom">Xem dự án</a>
+            <a href="#contact" class="btn btn-outline-custom">Liên hệ</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center mt-5 mt-lg-0">
+          <div class="hero-avatar">
+            <img
+              src="https://ui-avatars.com/api/?name=Nguyen+Van+A&size=220&background=4a6cf7&color=fff"
+              alt="Avatar"
+              class="rounded-circle"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section-wrap">
+    <div class="container">
+      <h2 class="section-title">Về tôi</h2>
+      <div class="section-divider"></div>
+      <div class="row g-5 align-items-center mt-2">
+        <div class="col-md-6">
+          <h3 class="about-heading">Tôi là ai?</h3>
+          <p class="about-text">
+            Mình là Nguyễn Sĩ Đang, sinh viên trường Đại học Bình Dương phân hiệu Cà Mau, chuyên ngành Công nghệ
+            Thông tin. Mình bắt đầu học lập trình từ năm đầu đại học và nhanh chóng
+            yêu thích phần front-end vì được nhìn thấy kết quả ngay trên trình duyệt.
+          </p>
+          <p class="about-text mt-3">
+            Hiện tại mình đang học và thực hành HTML, CSS, JavaScript và Bootstrap để
+            xây dựng nền tảng vững chắc trước khi học các framework như React.
+          </p>
+          <div class="about-stats row g-3 mt-3">
+            <div class="col-4 text-center">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Năm học</div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Dự án</div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Kỹ năng</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-card">
+            <div class="info-row">
+              <span class="info-label">Họ tên</span>
+              <span>Nguyễn Văn A</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">MSSV</span>
+              <span>123456789</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Trường</span>
+              <span>Đại học XYZ</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Chuyên ngành</span>
+              <span>Công nghệ Thông tin</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Email</span>
+              <span>nguyenvana@email.com</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Địa chỉ</span>
+              <span>TP. Hồ Chí Minh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section-wrap section-alt">
+    <div class="container">
+      <h2 class="section-title">Dự án của tôi</h2>
+      <div class="section-divider"></div>
+
+      <!-- Bộ lọc dự án -->
+      <div class="project-filter mt-4 mb-4">
+        <button class="filter-btn active" data-filter="all">Tất cả</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <div class="row g-4" id="projectGrid">
+        <!-- Project cards được render bằng JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section-wrap">
+    <div class="container">
+      <h2 class="section-title">Kỹ năng</h2>
+      <div class="section-divider"></div>
+      <div class="row g-4 mt-2">
+        <div class="col-md-6">
+          <h3 class="skills-heading">Front-end</h3>
+          <div class="skill-item">
+            <div class="skill-top"><span>HTML5 & CSS3</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 85%; background: #e44d26;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 70%; background: #f7df1e;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Bootstrap</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 75%; background: #7952b3;"></div></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="skills-heading">Công cụ</h3>
+          <div class="skill-item">
+            <div class="skill-top"><span>Git & GitHub</span><span>65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 65%; background: #f05032;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>VS Code</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%; background: #007acc;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Figma (cơ bản)</span><span>50%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width: 50%; background: #a259ff;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section-wrap section-alt">
+    <div class="container">
+      <h2 class="section-title">Liên hệ</h2>
+      <div class="section-divider"></div>
+      <div class="row g-5 mt-2">
+        <!-- Thông tin liên hệ -->
+        <div class="col-md-5">
+          <h3 class="contact-heading">Hãy liên lạc với tôi!</h3>
+          <p class="contact-desc">
+            Tôi luôn mở với các cơ hội thực tập, dự án freelance hay đơn giản là
+            muốn trao đổi về lập trình web.
+          </p>
+          <div class="contact-info-item">
+            <span>📧</span>
+            <span>nguyenvana@email.com</span>
+          </div>
+          <div class="contact-info-item">
+            <span>📞</span>
+            <span>0909 123 456</span>
+          </div>
+          <div class="contact-info-item">
+            <span>📍</span>
+            <span>TP. Hồ Chí Minh</span>
+          </div>
+          <div class="contact-info-item">
+            <span>🐙</span>
+            <span>github.com/nguyenvana</span>
+          </div>
+        </div>
+
+        <!-- Form liên hệ -->
+        <div class="col-md-7">
+          <form id="contactForm">
+            <div class="mb-3">
+              <input type="text" class="contact-input" id="contactName" placeholder="Họ và tên *" />
+              <small class="text-danger" id="contactNameError"></small>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="contact-input" id="contactEmail" placeholder="Email *" />
+              <small class="text-danger" id="contactEmailError"></small>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="contact-input" id="contactSubject" placeholder="Chủ đề" />
+            </div>
+            <div class="mb-3">
+              <textarea class="contact-input" id="contactMessage" rows="5" placeholder="Nội dung *"></textarea>
+              <small class="text-danger" id="contactMessageError"></small>
+            </div>
+            <button type="submit" class="btn btn-primary-custom w-100">
+              📨 Gửi tin nhắn
+            </button>
+          </form>
+
+          <div id="contactSuccess" class="contact-success" style="display:none;">
+            ✅ Tin nhắn đã được gửi! Tôi sẽ phản hồi sớm nhất có thể.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>Được làm với ❤️ bởi <strong>Nguyễn Văn A</strong> — Bài 05 Giữa kỳ Lập trình Web</p>
+      <p class="mt-1">© 2025 All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Nút Back to Top -->
+  <button id="backToTop" title="Về đầu trang">↑</button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

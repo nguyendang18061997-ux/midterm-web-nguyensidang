@@ -1,0 +1,251 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0eaff, #f5f0ff);
+  min-height: 100vh;
+}
+
+/* ===== WRAPPER ===== */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+/* ===== FORM CONTAINER ===== */
+.form-container {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 20px;
+  padding: 40px 36px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== FORM HEADER ===== */
+.form-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.form-header h1 {
+  font-size: 1.6rem;
+  color: #2c3e7a;
+  margin-bottom: 6px;
+}
+
+.form-header p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ===== FORM GROUPS ===== */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.required {
+  color: #e44;
+}
+
+/* ===== INPUTS ===== */
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 11px 14px;
+  border: 2px solid #dde3f0;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  transition: border-color 0.2s;
+  outline: none;
+  color: #333;
+}
+
+.form-group input:focus {
+  border-color: #4a6cf7;
+}
+
+/* Trạng thái hợp lệ */
+.form-group input.valid {
+  border-color: #22c55e;
+}
+
+/* Trạng thái lỗi */
+.form-group input.invalid {
+  border-color: #ef4444;
+  background: #fff8f8;
+}
+
+/* ===== ERROR MESSAGES ===== */
+.error-msg {
+  display: block;
+  color: #ef4444;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  min-height: 18px;
+}
+
+/* ===== RADIO GROUP ===== */
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+  font-weight: normal !important;
+}
+
+.radio-label input {
+  accent-color: #4a6cf7;
+  width: 16px;
+  height: 16px;
+}
+
+/* ===== PASSWORD WRAPPER ===== */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  flex: 1;
+  padding-right: 44px;
+}
+
+.toggle-pass {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.toggle-pass:hover {
+  opacity: 1;
+}
+
+/* ===== CHECKBOX ===== */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: #555;
+  cursor: pointer;
+  font-weight: normal !important;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #4a6cf7;
+  flex-shrink: 0;
+}
+
+.checkbox-label a {
+  color: #4a6cf7;
+  text-decoration: none;
+}
+
+.checkbox-label a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.submit-btn {
+  width: 100%;
+  padding: 13px;
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.25s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background: #3a5ce6;
+  transform: translateY(-2px);
+}
+
+/* ===== SUCCESS MESSAGE ===== */
+.success-message {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+.success-message h2 {
+  font-size: 1.4rem;
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+.success-message p {
+  color: #555;
+  font-size: 0.92rem;
+  margin-bottom: 20px;
+}
+
+.reset-btn {
+  background: #f0f4ff;
+  color: #4a6cf7;
+  border: 2px solid #4a6cf7;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reset-btn:hover {
+  background: #4a6cf7;
+  color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 28px 20px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

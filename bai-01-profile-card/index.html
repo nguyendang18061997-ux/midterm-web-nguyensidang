@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 01 - Profile Card</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="profile-wrapper">
+    <div class="profile-card">
+      <!-- Ảnh đại diện -->
+      <div class="avatar-container">
+        <!-- Thay src bằng đường dẫn ảnh của bạn, hoặc giữ nguyên placeholder -->
+        <img
+          src="../bai-01-profile-card/images.jpg"
+          alt="Avatar"
+          class="avatar"
+        />
+      </div>
+
+      <!-- Thông tin cá nhân -->
+      <h1 class="name">Nguyễn Sĩ Đang</h1>
+      <p class="job-title">🎓 Sinh viên Lập trình Web</p>
+
+      <p class="description">
+        Xin chào! Mình đang học lập trình web front-end, yêu thích thiết kế
+        giao diện và xây dựng trải nghiệm người dùng thân thiện.
+      </p>
+
+      <!-- Danh sách kỹ năng -->
+      <div class="skills-section">
+        <h2>Kỹ năng</h2>
+        <ul class="skill-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+
+      <!-- Sở thích -->
+      <div class="hobbies-section">
+        <h2>Sở thích</h2>
+        <p class="hobbies">🎮 Gaming &nbsp;|&nbsp; 📚 Đọc sách &nbsp;|&nbsp; 🎵 Nghe nhạc</p>
+      </div>
+
+      <!-- Link mạng xã hội -->
+      <div class="social-links">
+        <a href="#" class="social-btn facebook">📘 Facebook</a>
+        <a href="#" class="social-btn github">🐙 GitHub</a>
+        <a href="#" class="social-btn email">📧 Email</a>
+      </div>
+
+      <!-- Nút đổi theme -->
+      <button id="themeBtn" class="theme-btn">🌙 Chế độ tối</button>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

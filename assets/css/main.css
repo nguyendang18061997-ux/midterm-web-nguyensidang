@@ -1,0 +1,131 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f4ff;
+  color: #1a1a2e;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.main-header {
+  background: linear-gradient(135deg, #2c3e7a, #4a6cf7);
+  color: white;
+  padding: 40px 24px;
+}
+
+.header-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.student-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.student-info p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.intro {
+  margin-bottom: 32px;
+}
+
+.intro h2 {
+  font-size: 1.4rem;
+  color: #2c3e7a;
+  margin-bottom: 8px;
+}
+
+.intro p {
+  color: #555;
+}
+
+/* ===== EXERCISE CARDS ===== */
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exercise-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px 24px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-left: 4px solid #4a6cf7;
+}
+
+.exercise-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 4px 20px rgba(74, 108, 247, 0.2);
+}
+
+.exercise-num {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4a6cf7;
+  min-width: 48px;
+}
+
+.exercise-info h3 {
+  font-size: 1.05rem;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.exercise-info p {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.arrow {
+  margin-left: auto;
+  font-size: 1.3rem;
+  color: #4a6cf7;
+}
+
+/* ===== FOOTER ===== */
+.main-footer {
+  text-align: center;
+  padding: 24px;
+  color: #999;
+  font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .student-info {
+    grid-template-columns: 1fr;
+  }
+
+  .exercise-num {
+    font-size: 1.4rem;
+  }
+}

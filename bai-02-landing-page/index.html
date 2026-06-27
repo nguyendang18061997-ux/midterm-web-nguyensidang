@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 02 - Landing Page | Quán Cà Phê Mộc</title>
+
+  <!-- Bootstrap CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- CSS riêng của bài -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">☕ Cà Phê Mộc</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Trang chủ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Về chúng tôi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="hero-title">Thư giãn cùng<br /><span>hương cà phê</span></h1>
+          <p class="hero-desc">
+            Quán Cà Phê Mộc — nơi không gian yên tĩnh, cà phê thơm ngon và âm nhạc
+            nhẹ nhàng hòa quyện. Ghé thăm chúng tôi mỗi ngày từ 7:00 đến 22:00.
+          </p>
+          <button id="ctaBtn" class="btn btn-custom-primary me-2">Xem thực đơn</button>
+          <button id="orderBtn" class="btn btn-custom-outline">Đặt bàn ngay</button>
+        </div>
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+          <!-- Placeholder hình ảnh, thay bằng ảnh thật nếu có -->
+          <div class="hero-image-placeholder">☕</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES / MENU SECTION ===== -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Thực đơn nổi bật</h2>
+      <p class="section-subtitle">Được chế biến từ những hạt cà phê chọn lọc tốt nhất</p>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="menu-card">
+            <div class="menu-icon">🍵</div>
+            <h3>Cà Phê Sữa Đá</h3>
+            <p>Hương vị đậm đà, thơm ngon, phù hợp cho buổi sáng năng động.</p>
+            <span class="price">25.000 đ</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="menu-card">
+            <div class="menu-icon">☕</div>
+            <h3>Cappuccino</h3>
+            <p>Bọt sữa mịn màng hòa quyện với espresso chuẩn Ý, ngọt ngào tinh tế.</p>
+            <span class="price">45.000 đ</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="menu-card">
+            <div class="menu-icon">🧋</div>
+            <h3>Trà Sữa Matcha</h3>
+            <p>Matcha Nhật Bản nguyên chất, thanh mát và bổ dưỡng cho mọi ngày.</p>
+            <span class="price">40.000 đ</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4">
+          <div class="menu-card">
+            <div class="menu-icon">🍹</div>
+            <h3>Nước Ép Trái Cây</h3>
+            <p>Tươi ngon từ trái cây tự nhiên, bổ sung vitamin cho cả ngày dài.</p>
+            <span class="price">30.000 đ</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4">
+          <div class="menu-card">
+            <div class="menu-icon">🍰</div>
+            <h3>Bánh Tiramisu</h3>
+            <p>Hương cà phê và kem phô mai nhẹ nhàng — lựa chọn tráng miệng hoàn hảo.</p>
+            <span class="price">55.000 đ</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4">
+          <div class="menu-card">
+            <div class="menu-icon">🧊</div>
+            <h3>Cold Brew</h3>
+            <p>Ủ lạnh 12 giờ, vị cà phê mượt mà không đắng, lý tưởng cho mùa hè.</p>
+            <span class="price">50.000 đ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section-padding about-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <div class="about-image-placeholder">🏡</div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title text-start">Về Cà Phê Mộc</h2>
+          <p>
+            Thành lập năm 2020, Cà Phê Mộc hướng đến không gian thân thiện, mộc mạc nhưng
+            tinh tế. Chúng tôi tin rằng một tách cà phê ngon không chỉ là hương vị — mà
+            còn là khoảnh khắc được sống chậm lại.
+          </p>
+          <ul class="about-list mt-3">
+            <li>✅ Nguyên liệu 100% tự nhiên</li>
+            <li>✅ Không gian thoáng mát, có Wi-Fi miễn phí</li>
+            <li>✅ Phục vụ từ 7:00 đến 22:00 mỗi ngày</li>
+            <li>✅ Hỗ trợ đặt bàn và giao hàng tận nơi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / FOOTER SECTION ===== -->
+  <section id="contact" class="section-padding contact-section">
+    <div class="container text-center">
+      <h2 class="section-title">Liên hệ & Địa chỉ</h2>
+      <p class="section-subtitle">Chúng tôi luôn vui lòng phục vụ bạn</p>
+
+      <div class="row justify-content-center g-4 mt-2">
+        <div class="col-md-3">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h4>Địa chỉ</h4>
+            <p>123 Đường ABC, Quận 1, TP.HCM</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h4>Điện thoại</h4>
+            <p>0909 123 456</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-card">
+            <div class="contact-icon">🕐</div>
+            <h4>Giờ mở cửa</h4>
+            <p>7:00 – 22:00 mỗi ngày</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="main-footer">
+    <p>© 2025 Quán Cà Phê Mộc. Được làm bởi Nguyễn Văn A — Bài 02 Giữa kỳ.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <!-- Script của bài -->
+  <script src="./script.js"></script>
+</body>
+</html>

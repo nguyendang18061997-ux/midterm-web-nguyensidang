@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bài 03 - Form Đăng Ký</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="form-container">
+      <div class="form-header">
+        <h1>📝 Đăng ký tài khoản</h1>
+        <p>Vui lòng điền đầy đủ thông tin bên dưới</p>
+      </div>
+
+      <form id="registerForm" novalidate>
+
+        <!-- Họ tên -->
+        <div class="form-group">
+          <label for="fullName">Họ và tên <span class="required">*</span></label>
+          <input type="text" id="fullName" placeholder="Nguyễn Văn A" />
+          <small class="error-msg" id="fullNameError"></small>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="text" id="email" placeholder="example@gmail.com" />
+          <small class="error-msg" id="emailError"></small>
+        </div>
+
+        <!-- Số điện thoại -->
+        <div class="form-group">
+          <label for="phone">Số điện thoại <span class="required">*</span></label>
+          <input type="text" id="phone" placeholder="0909 123 456" />
+          <small class="error-msg" id="phoneError"></small>
+        </div>
+
+        <!-- Giới tính -->
+        <div class="form-group">
+          <label>Giới tính <span class="required">*</span></label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="gender" value="male" /> Nam
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="female" /> Nữ
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="other" /> Khác
+            </label>
+          </div>
+          <small class="error-msg" id="genderError"></small>
+        </div>
+
+        <!-- Mật khẩu -->
+        <div class="form-group">
+          <label for="password">Mật khẩu <span class="required">*</span></label>
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Ít nhất 6 ký tự" />
+            <button type="button" id="togglePassword" class="toggle-pass">👁</button>
+          </div>
+          <small class="error-msg" id="passwordError"></small>
+        </div>
+
+        <!-- Nhập lại mật khẩu -->
+        <div class="form-group">
+          <label for="confirmPassword">Nhập lại mật khẩu <span class="required">*</span></label>
+          <div class="password-wrapper">
+            <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu" />
+            <button type="button" id="toggleConfirm" class="toggle-pass">👁</button>
+          </div>
+          <small class="error-msg" id="confirmPasswordError"></small>
+        </div>
+
+        <!-- Đồng ý điều khoản -->
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="agree" />
+            Tôi đồng ý với <a href="#">Điều khoản sử dụng</a> và <a href="#">Chính sách bảo mật</a>
+          </label>
+          <small class="error-msg" id="agreeError"></small>
+        </div>
+
+        <!-- Nút đăng ký -->
+        <button type="submit" class="submit-btn">Đăng ký</button>
+      </form>
+
+      <!-- Thông báo thành công (ẩn ban đầu) -->
+      <div id="successMessage" class="success-message" style="display: none;">
+        <div class="success-icon">🎉</div>
+        <h2>Đăng ký thành công!</h2>
+        <p id="successDetail"></p>
+        <button id="resetBtn" class="reset-btn">Đăng ký tài khoản khác</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2d2d2d;
+}
+
+/* ===== NAVBAR ===== */
+#mainNav {
+  background: rgba(60, 40, 20, 0.95);
+  backdrop-filter: blur(8px);
+  transition: background 0.3s;
+}
+
+#mainNav.scrolled {
+  background: rgba(60, 40, 20, 1);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f5c842 !important;
+}
+
+.nav-link {
+  color: #ddd !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #f5c842 !important;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3c2810, #6b4423);
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  color: white;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  color: #f5c842;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  opacity: 0.85;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.hero-image-placeholder {
+  font-size: 9rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Custom buttons */
+.btn-custom-primary {
+  background: #f5c842;
+  color: #3c2810;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-custom-primary:hover {
+  background: #e0b030;
+  transform: translateY(-2px);
+  color: #3c2810;
+}
+
+.btn-custom-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.6);
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.btn-custom-outline:hover {
+  border-color: #f5c842;
+  color: #f5c842;
+  transform: translateY(-2px);
+}
+
+/* ===== SECTIONS CHUNG ===== */
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3c2810;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #777;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ===== MENU CARDS ===== */
+.menu-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 22px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.25s, box-shadow 0.25s;
+  height: 100%;
+  border-top: 4px solid #f5c842;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 32px rgba(0,0,0,0.14);
+}
+
+.menu-icon {
+  font-size: 2.5rem;
+  margin-bottom: 14px;
+}
+
+.menu-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3c2810;
+  margin-bottom: 10px;
+}
+
+.menu-card p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.price {
+  background: #fff8e1;
+  color: #b8860b;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  background: #fdf6ec;
+}
+
+.about-image-placeholder {
+  font-size: 8rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  padding: 8px 0;
+  font-size: 0.95rem;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.about-section .section-title {
+  text-align: left;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  background: #3c2810;
+  color: white;
+}
+
+.contact-section .section-title {
+  color: #f5c842;
+}
+
+.contact-section .section-subtitle {
+  color: #bbb;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 28px 20px;
+  transition: background 0.2s;
+}
+
+.contact-card:hover {
+  background: rgba(255,255,255,0.14);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f5c842;
+  margin-bottom: 6px;
+}
+
+.contact-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* ===== FOOTER ===== */
+.main-footer {
+  background: #2a1c0d;
+  color: #777;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-image-placeholder {
+    font-size: 6rem;
+  }
+}
